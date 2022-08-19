@@ -117,7 +117,7 @@ class NetworkImage extends image_provider.ImageProvider<image_provider.NetworkIm
       scheduleMicrotask(() {
         PaintingBinding.instance.imageCache.evict(key);
       });
-      rethrow;
+    rethrow;
     } finally {
       chunkEvents.close();
     }
